@@ -33,7 +33,7 @@ class DBStorage:
         TEMPO_MYSQL_HOST = getenv('TEMPO_MYSQL_HOST')
         TEMPO_MYSQL_DB = getenv('TEMPO_MYSQL_DB')
         TEMPO_ENV = getenv('TEMPO_ENV')
-        self.__engine = create_engine('mysql+mysqldb://{}:{}@{}/{}'.
+        self.__engine = create_engine('mariadb+mysqldb://{}:{}@{}/{}'.
                                       format(TEMPO_MYSQL_USER,
                                              TEMPO_MYSQL_PWD,
                                              TEMPO_MYSQL_HOST,
